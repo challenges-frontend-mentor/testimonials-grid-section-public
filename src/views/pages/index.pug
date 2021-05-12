@@ -1,0 +1,17 @@
+//- include ../mixins/user
+include ../block/card
+include ../data/cards-info
+
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet", href="css/style.css")
+    title Testimonial grid section main
+  body
+    main.main
+      each cardInfo in cardsInfo
+        +card(cardInfo.title, cardInfo.comment)
+          +card-user(cardInfo.header.pictureURL, cardInfo.header.authorName)

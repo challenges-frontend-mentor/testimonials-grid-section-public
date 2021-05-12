@@ -1,0 +1,9 @@
+mixin card-user(pictureURL, authorName)
+  header.card__header.user
+    .user__left
+      img(src= `assets/images/${pictureURL}.jpg` alt= `${authorName} profile picture`).user__photo
+    .user__right
+      p.user__author-name= authorName
+      p.user__profession= "Verified Graduate"
+
+    
