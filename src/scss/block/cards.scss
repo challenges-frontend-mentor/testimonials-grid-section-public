@@ -1,0 +1,46 @@
+@use "../config/variables" as *;
+
+.card{
+  background-color: $white;
+  padding: 2rem;
+  margin-bottom: 25px;
+  border-radius: .5rem;
+  box-shadow: 20px $very-dark-blackish-blue
+
+  &__title{
+    font-size: 1.2rem;
+  }
+
+  &__comment{
+    font-size: .8rem;
+    opacity: .7;
+    line-height: 1.4;
+    // padding-right: .5rem;
+  }
+
+  &--is-violet,
+  &--is-gray,
+  &--is-blue{
+    color: $white;
+  }
+
+  &--is-violet{
+    background-color: $moderate-violet;
+  }
+
+  &--is-gray{
+    background-color: $very-dark-grayish-blue;
+  }
+
+  &--is-blue{
+    background-color: $very-dark-blackish-blue;
+  }
+
+  &--bg-quotes{
+    background-image: url(../assets/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-size: 30% 23%;
+    background-position-x:  right 1.5rem;
+  }
+
+}

@@ -6,6 +6,7 @@ const pug = require("gulp-pug")
 
 //SASS
 const sass = require("gulp-sass")
+sass.compiler = require("sass");
 //commoms
 
 const production = false

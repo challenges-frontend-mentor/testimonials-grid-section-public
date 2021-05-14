@@ -1,0 +1,31 @@
+@use "../config/variables" as *;
+
+.user{
+  display: flex;
+  align-content: center;
+  justify-content: left;
+
+  &__left{
+    margin-right: -.8rem; 
+  }
+
+  &__photo{
+    border-radius: 50%;
+    max-width: 50%;
+  }
+
+  &__right{
+
+  }
+
+  &__author-name, &__profession{
+    font-size: .8rem;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+  }
+
+  &__profession{
+    opacity: .5;
+  }
+}

@@ -1,3 +1,67 @@
 body {
   font-family: BarlowSemiCondensed;
+  padding-left: 19px;
+  padding-right: 19px;
+  background-color: #ecf2f8;
+  margin-top: 4.5rem;
+  color: #48556a;
+}
+
+blockquote {
+  padding: 0;
+  margin: 0;
+}
+
+.card {
+  background-color: white;
+  padding: 2rem;
+  margin-bottom: 25px;
+  border-radius: 0.5rem;
+  box-shadow: 20px #19212e .card __title;
+  box-shadow-font-size: 1.2rem;
+}
+.card__comment {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  line-height: 1.4;
+}
+.card--is-violet, .card--is-gray, .card--is-blue {
+  color: white;
+}
+.card--is-violet {
+  background-color: #7541c8;
+}
+.card--is-gray {
+  background-color: #48556a;
+}
+.card--is-blue {
+  background-color: #19212e;
+}
+.card--bg-quotes {
+  background-image: url(../assets/images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-size: 30% 23%;
+  background-position-x: right 1.5rem;
+}
+
+.user {
+  display: flex;
+  align-content: center;
+  justify-content: left;
+}
+.user__left {
+  margin-right: -0.8rem;
+}
+.user__photo {
+  border-radius: 50%;
+  max-width: 50%;
+}
+.user__author-name, .user__profession {
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+.user__profession {
+  opacity: 0.5;
 }
