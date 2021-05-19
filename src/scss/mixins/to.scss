@@ -1,0 +1,6 @@
+@mixin to($breackpoint){
+  $final-breackpoint: $breackpoint - 1px;
+  @media screen and (max-width:$final-breackpoint) {
+    @content
+  }
+}

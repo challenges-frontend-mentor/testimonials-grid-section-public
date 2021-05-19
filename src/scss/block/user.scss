@@ -12,6 +12,11 @@
   &__photo{
     border-radius: 50%;
     max-width: 50%;
+    border: 2px solid #ffffff;
+  }
+
+  &--border-photo img{
+    border: 2px solid hsl(263, 54%, 63%) ;
   }
 
   &__right{

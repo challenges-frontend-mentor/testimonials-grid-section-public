@@ -1,21 +1,25 @@
 @use "../config/variables" as *;
+@use "../mixins/to" as *;
 
 .card{
   background-color: $white;
   padding: 2rem;
-  margin-bottom: 25px;
   border-radius: .5rem;
-  box-shadow: 20px $very-dark-blackish-blue
+  @include to($desktop){
+    margin-bottom: 25px;
+  }
+  
 
   &__title{
     font-size: 1.2rem;
+    font-weight: 600;
   }
 
   &__comment{
     font-size: .8rem;
-    opacity: .7;
+    opacity: .5;
     line-height: 1.4;
-    // padding-right: .5rem;
+    font-weight: 500;
   }
 
   &--is-violet,
@@ -39,8 +43,15 @@
   &--bg-quotes{
     background-image: url(../assets/images/bg-pattern-quotation.svg);
     background-repeat: no-repeat;
-    background-size: 30% 23%;
     background-position-x:  right 1.5rem;
+  }
+
+  $area-names:("daniel","jonathan","jeanette","patrick","kira");
+
+  @each $user in $area-names{
+    &--#{$user}{
+      grid-area: #{$user}; 
+    }
   }
 
 }

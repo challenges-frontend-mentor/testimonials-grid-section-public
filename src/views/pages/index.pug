@@ -15,4 +15,4 @@ html(lang="en")
     main.main
       each cardInfo in cardsInfo
         +card(cardInfo.title, cardInfo.comment, cardInfo.classModifier)
-          +card-user(cardInfo.header.pictureURL, cardInfo.header.authorName)
+          +card-user(cardInfo.header.pictureURL, cardInfo.header.authorName, cardInfo.header.classModifier)
